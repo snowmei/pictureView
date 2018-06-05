@@ -1,0 +1,161 @@
+.imgContainer{
+	float:left;
+	width:178px;
+	height:220px;
+	margin:10px 20px 10px 0;
+}
+.imgBox{
+	width:170px;
+	height:210px;
+	border:1px solid #ccc;
+	border-radius: 8px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+	padding:5px;
+	margin:10px 20px 10px 0;
+}
+.addImg{
+	width: 148px;
+	height:150px;
+	border:1px solid #ccc;
+	text-align: center;
+	margin:10px auto;
+}
+.addImg img{
+	width: 95%;
+	height:95%;
+	cursor: pointer;
+}
+.imgContainer .imgDes{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color:#555;
+}
+/*图片的显示*/
+.imgdiv{
+	width: 160px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    float:left;
+    margin:10px 20px 10px 0;
+}
+.imgtotal{
+	color: #222;
+    height: 28px;
+    width: 30px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+    border-bottom-left-radius: 52%;
+    border-bottom-right-radius: 52%;
+    z-index: 6;
+    font-size: 12px;
+    background: rgba(209,150,92,0.9);
+    line-height: 22px;
+    font-weight: 600;
+}
+.fileimgbg{
+	width: 160px;
+    height: 170px;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    z-index: 2;
+    cursor: pointer;
+    background: url(../images/u326.png) no-repeat 0 0;
+    background-size: 160px 170px;
+}
+.imgwrap{
+	width: 140px;
+    height: 158px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	padding: 6px;
+	background: url(../images/SingleImagebg.png) no-repeat 0 0;
+	background-size: 140px 158px;
+}
+.imgwrap .pic img{
+	width:100%;
+	height:100%;
+}
+/*右下角的角标部分*/
+.sideinfo .sidetitle{
+	margin-left: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#555;
+}
+.sideinfo .morechoices{
+	float: right;
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    background: url(../images/icon-more-dian.png) no-repeat center;
+}
+.sideinfo .morechoices.active,
+.sideinfo .morechoices:hover{
+    background: url(../images/icon-more-dian-hover.png) no-repeat center;
+}
+em.iconjiao{
+	width: 20px;
+    height: 10px;
+    display: none;
+    position: absolute;
+    bottom: -11px;
+    left: 0px;
+    z-index: 8;
+    background: url(../images/icon-jiao.png) no-repeat left;
+}
+.makebox{
+	width: 100px;
+    padding: 6px;
+    position: absolute;
+    top: 205px;
+    left: 130px;
+    display: none;
+    z-index: 7;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.makebox p{
+	font-size: 14px;
+	font-weight: bold;
+}
+.makebox p span{
+    padding-left: 30px;
+    line-height: 30px;
+    display: block;
+    cursor: pointer;
+    color: #333;
+}
+.makebox p span:hover{
+    color: #ff6600;
+}
+.makebox p span.iconAddContinue {
+    background: url(../images/icon-continue.png) no-repeat left;
+    background-size: 16px 16px;
+}
+.makebox p span.lookbig {
+    background: url(../images/icon-look-gray.png) no-repeat left;
+    background-size: 16px 16px;
+}
+.makebox p span.iconAddContinue:hover {
+    background: url(../images/icon-continue-hover.png) no-repeat left;
+    background-size: 16px 16px;
+}
+.makebox p span.lookbig:hover {
+    background: url(../images/icon-look-gray-hover.png) no-repeat left;
+    background-size: 16px 16px;
+}

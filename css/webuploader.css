@@ -1,0 +1,253 @@
+.masklayer{
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity: 0.5;
+	filter:alpha(opacity=50); 
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.webuploader-container {
+    position: relative;
+}
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #3B8CFF;
+    padding: 5px 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.webuploader-pick-hover {
+    background: #0069FF;
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events:none;
+}
+
+*, *::before, *::after {
+    box-sizing: content-box;
+}
+a{
+    color: #FFFFFF;
+}
+
+.diaWin {
+    width: 630px;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    box-sizing:  content-box;
+    z-index: 1000;
+    
+}
+.diaWinbor{
+    display: block;
+    background: #fff;
+    border: #3B8CFF 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+}
+.diaWinbor .title {
+	width:100%;
+    height: 46px;
+    line-height: 46px;
+    text-indent: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+    color: #666666;
+    background: #FFFFFF;
+    font-size: 16px;
+}
+/*关闭按钮*/
+.diaWinbor .close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+}
+.diaWinbor .close:hover{
+    color:#0069FF;
+}
+.diaWinbor .winbox {
+    /*width: 100%;*/
+    height: 350px;
+    background: #fff;
+    box-sizing: content-box;
+    padding: 5px;
+}
+/*确定按钮*/
+.diaWinbor .sav_btn {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    border-radius: 3px;
+    background: #3B8CFF;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.diaWinbor .sav_btn:hover{
+    cursor: pointer;
+    background-color: #0069FF;
+}
+/*添加文件按钮*/
+.diaWinbor .selbtn {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: #3B8CFF;
+    padding: 5px;
+    color: #FFFFFF;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.diaWinbor .selbtn:hover{
+    background-color: #0069FF;
+}
+.diaWinbor .uploader-list{
+    overflow: hidden;
+}
+.diaWinbor .info{
+    width: 185px;
+    height:22px;
+    overflow: hidden;
+    text-align: left;
+    float:left;
+    background: url('/TiBom/Common/images/upfile.png') no-repeat left center;
+    padding-left: 25px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.diaWinbor .file-item{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-bottom: 1px solid lightgrey;
+}
+.diaWinbor .progress{
+    border-radius: 4px;
+    height: 20px;
+    font-size: 14px;
+}
+
+.diaWinbor .progress.active .progress-bar {
+    animation: progress-bar-stripes 2s linear 0s normal none infinite running;
+}
+
+.diaWinbor .progress-striped .progress-bar {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+}
+
+.diaWinbor .progress-bar {
+    background-image: linear-gradient(to bottom, #428bca 0px, #3071a9 100%);
+    background-repeat: repeat-x;
+}
+.diaWinbor .progress-bar {
+    background-color: #428bca;
+    /*box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;*/
+    color: #fff;
+    font-size: 12px;
+    height: 3px;
+    text-align: center;
+    transition: width 0.6s ease 0s;
+   
+}
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 40px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 40px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.diaWinbor .delete{
+    width: 11px;
+    height: 11px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.diaWinbor .delete:hover{
+    transform: scale(1.3);
+}
+.diaWinbor .info-head{
+    padding: 10px;display: flex;align-items: center;justify-content: center;
+}
+.diaWinbor .info-body{
+    height:30px;
+    line-height: 30px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
+}
+.diaWinbor .info-tip1,.diaWinbor .info-tip2,.diaWinbor .info-tip3,.diaWinbor .info-tip4{
+    float: left;
+    text-align: left;
+    display: inline-block;
+
+}
+.diaWinbor .info-tip1{
+    width: 230px;
+    padding-left:30px;
+}
+.diaWinbor .info-tip2{
+    width: 200px;
+}
+.diaWinbor .info-tip3{
+    width: 50px;
+    text-align: center;
+}
+.diaWinbor .info-tip3 img{
+    margin-left:15px;
+}
+.diaWinbor .info-tip4{
+    width: 65px;
+}
+.diaWinbor .info-right{
+	text-align: right;
+}
+.diaWinbor .info-footer{
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom:15px;
+}
+.diaWinbor .saveContain{
+    display: flex;justify-content: center
+}
+/*限制上传文件的格式*/
+.diaWinbor .limit{
+	font-size: 12px;
+	margin-left: -200px;
+	margin-right: 20px;
+	color:#555;
+}
